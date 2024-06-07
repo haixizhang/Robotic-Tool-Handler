@@ -1,0 +1,2 @@
+motor_control:planner:pot_control
+-DCATKIN_DEVEL_PREFIX=/home/enis/Actuation/devel -DCMAKE_INSTALL_PREFIX=/home/enis/Actuation/install -G Unix Makefiles

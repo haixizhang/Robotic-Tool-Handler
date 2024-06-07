@@ -1,0 +1,110 @@
+; Auto-generated. Do not edit!
+
+
+(cl:in-package intera_core_msgs-msg)
+
+
+;//! \htmlinclude CalibrationCommandResult.msg.html
+
+(cl:defclass <CalibrationCommandResult> (roslisp-msg-protocol:ros-message)
+  ((result
+    :reader result
+    :initarg :result
+    :type cl:boolean
+    :initform cl:nil)
+   (statusId
+    :reader statusId
+    :initarg :statusId
+    :type cl:string
+    :initform ""))
+)
+
+(cl:defclass CalibrationCommandResult (<CalibrationCommandResult>)
+  ())
+
+(cl:defmethod cl:initialize-instance :after ((m <CalibrationCommandResult>) cl:&rest args)
+  (cl:declare (cl:ignorable args))
+  (cl:unless (cl:typep m 'CalibrationCommandResult)
+    (roslisp-msg-protocol:msg-deprecation-warning "using old message class name intera_core_msgs-msg:<CalibrationCommandResult> is deprecated: use intera_core_msgs-msg:CalibrationCommandResult instead.")))
+
+(cl:ensure-generic-function 'result-val :lambda-list '(m))
+(cl:defmethod result-val ((m <CalibrationCommandResult>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader intera_core_msgs-msg:result-val is deprecated.  Use intera_core_msgs-msg:result instead.")
+  (result m))
+
+(cl:ensure-generic-function 'statusId-val :lambda-list '(m))
+(cl:defmethod statusId-val ((m <CalibrationCommandResult>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader intera_core_msgs-msg:statusId-val is deprecated.  Use intera_core_msgs-msg:statusId instead.")
+  (statusId m))
+(cl:defmethod roslisp-msg-protocol:symbol-codes ((msg-type (cl:eql '<CalibrationCommandResult>)))
+    "Constants for message type '<CalibrationCommandResult>"
+  '((:SUCCESS . "Success")
+    (:STOPPED . "Stopped")
+    (:GENERIC_FAILURE . "calibrationFailure")
+    (:INCOMPLETE . "incomplete")
+    (:GRIPPER_ON . "cannotCalibrateWithGripper")
+    (:TORQUES_EXCEEDED_THRESHOLD . "torquesExceededThreshold")
+    (:PLANNER_FAILURE . "plannerFailure"))
+)
+(cl:defmethod roslisp-msg-protocol:symbol-codes ((msg-type (cl:eql 'CalibrationCommandResult)))
+    "Constants for message type 'CalibrationCommandResult"
+  '((:SUCCESS . "Success")
+    (:STOPPED . "Stopped")
+    (:GENERIC_FAILURE . "calibrationFailure")
+    (:INCOMPLETE . "incomplete")
+    (:GRIPPER_ON . "cannotCalibrateWithGripper")
+    (:TORQUES_EXCEEDED_THRESHOLD . "torquesExceededThreshold")
+    (:PLANNER_FAILURE . "plannerFailure"))
+)
+(cl:defmethod roslisp-msg-protocol:serialize ((msg <CalibrationCommandResult>) ostream)
+  "Serializes a message object of type '<CalibrationCommandResult>"
+  (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:if (cl:slot-value msg 'result) 1 0)) ostream)
+  (cl:let ((__ros_str_len (cl:length (cl:slot-value msg 'statusId))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_str_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (c) (cl:write-byte (cl:char-code c) ostream)) (cl:slot-value msg 'statusId))
+)
+(cl:defmethod roslisp-msg-protocol:deserialize ((msg <CalibrationCommandResult>) istream)
+  "Deserializes a message object of type '<CalibrationCommandResult>"
+    (cl:setf (cl:slot-value msg 'result) (cl:not (cl:zerop (cl:read-byte istream))))
+    (cl:let ((__ros_str_len 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'statusId) (cl:make-string __ros_str_len))
+      (cl:dotimes (__ros_str_idx __ros_str_len msg)
+        (cl:setf (cl:char (cl:slot-value msg 'statusId) __ros_str_idx) (cl:code-char (cl:read-byte istream)))))
+  msg
+)
+(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<CalibrationCommandResult>)))
+  "Returns string type for a message object of type '<CalibrationCommandResult>"
+  "intera_core_msgs/CalibrationCommandResult")
+(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql 'CalibrationCommandResult)))
+  "Returns string type for a message object of type 'CalibrationCommandResult"
+  "intera_core_msgs/CalibrationCommandResult")
+(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<CalibrationCommandResult>)))
+  "Returns md5sum for a message object of type '<CalibrationCommandResult>"
+  "42762277c2f2777e046b77cebb5b2b55")
+(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'CalibrationCommandResult)))
+  "Returns md5sum for a message object of type 'CalibrationCommandResult"
+  "42762277c2f2777e046b77cebb5b2b55")
+(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<CalibrationCommandResult>)))
+  "Returns full string definition for message of type '<CalibrationCommandResult>"
+  (cl:format cl:nil "# ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======~%# result~%bool result~%string statusId~%# possible values for statusId are:~%string SUCCESS=Success~%string STOPPED=Stopped~%string GENERIC_FAILURE=calibrationFailure~%string INCOMPLETE=incomplete~%string GRIPPER_ON=cannotCalibrateWithGripper~%string TORQUES_EXCEEDED_THRESHOLD=torquesExceededThreshold~%string PLANNER_FAILURE=plannerFailure~%~%~%~%~%"))
+(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'CalibrationCommandResult)))
+  "Returns full string definition for message of type 'CalibrationCommandResult"
+  (cl:format cl:nil "# ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======~%# result~%bool result~%string statusId~%# possible values for statusId are:~%string SUCCESS=Success~%string STOPPED=Stopped~%string GENERIC_FAILURE=calibrationFailure~%string INCOMPLETE=incomplete~%string GRIPPER_ON=cannotCalibrateWithGripper~%string TORQUES_EXCEEDED_THRESHOLD=torquesExceededThreshold~%string PLANNER_FAILURE=plannerFailure~%~%~%~%~%"))
+(cl:defmethod roslisp-msg-protocol:serialization-length ((msg <CalibrationCommandResult>))
+  (cl:+ 0
+     1
+     4 (cl:length (cl:slot-value msg 'statusId))
+))
+(cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <CalibrationCommandResult>))
+  "Converts a ROS message object to a list"
+  (cl:list 'CalibrationCommandResult
+    (cl:cons ':result (result msg))
+    (cl:cons ':statusId (statusId msg))
+))

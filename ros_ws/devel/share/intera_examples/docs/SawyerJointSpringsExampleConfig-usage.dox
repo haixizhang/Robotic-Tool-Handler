@@ -1,0 +1,20 @@
+\subsubsection usage Usage
+\verbatim
+<node name="" pkg="joint_torque" type="">
+  <param name="j0_spring_stiffness" type="double" value="10.0" />
+  <param name="j0_damping_coefficient" type="double" value="0.1" />
+  <param name="j1_spring_stiffness" type="double" value="15.0" />
+  <param name="j1_damping_coefficient" type="double" value="0.1" />
+  <param name="j2_spring_stiffness" type="double" value="5.0" />
+  <param name="j2_damping_coefficient" type="double" value="0.1" />
+  <param name="j3_spring_stiffness" type="double" value="5.0" />
+  <param name="j3_damping_coefficient" type="double" value="0.1" />
+  <param name="j4_spring_stiffness" type="double" value="3.0" />
+  <param name="j4_damping_coefficient" type="double" value="0.1" />
+  <param name="j5_spring_stiffness" type="double" value="2.0" />
+  <param name="j5_damping_coefficient" type="double" value="0.1" />
+  <param name="j6_spring_stiffness" type="double" value="1.5" />
+  <param name="j6_damping_coefficient" type="double" value="0.1" />
+</node>
+\endverbatim
+

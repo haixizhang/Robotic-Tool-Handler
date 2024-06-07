@@ -1,0 +1,24 @@
+(cl:in-package intera_motion_msgs-msg)
+(cl:export '(PLANNED_DURATION-VAL
+          PLANNED_DURATION
+          MEASURED_DURATION-VAL
+          MEASURED_DURATION
+          MIN_ANGLE_COMMAND-VAL
+          MIN_ANGLE_COMMAND
+          MAX_ANGLE_COMMAND-VAL
+          MAX_ANGLE_COMMAND
+          PEAK_SPEED_COMMAND-VAL
+          PEAK_SPEED_COMMAND
+          PEAK_ACCEL_COMMAND-VAL
+          PEAK_ACCEL_COMMAND
+          PEAK_JERK_COMMAND-VAL
+          PEAK_JERK_COMMAND
+          MIN_TIME_RATE-VAL
+          MIN_TIME_RATE
+          MAX_TIME_RATE-VAL
+          MAX_TIME_RATE
+          MAX_POSITION_ERROR-VAL
+          MAX_POSITION_ERROR
+          MAX_VELOCITY_ERROR-VAL
+          MAX_VELOCITY_ERROR
+))

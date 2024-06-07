@@ -1,0 +1,22 @@
+\subsubsection usage Usage
+\verbatim
+<node name="" pkg="intera_interface" type="">
+  <param name="goal_time" type="double" value="0.1" />
+  <param name="stopped_velocity_tolerance" type="double" value="0.25" />
+  <param name="right_j0_goal" type="double" value="-1.0" />
+  <param name="right_j1_goal" type="double" value="-1.0" />
+  <param name="right_j2_goal" type="double" value="-1.0" />
+  <param name="right_j3_goal" type="double" value="-1.0" />
+  <param name="right_j4_goal" type="double" value="-1.0" />
+  <param name="right_j5_goal" type="double" value="-1.0" />
+  <param name="right_j6_goal" type="double" value="-1.0" />
+  <param name="right_j0_trajectory" type="double" value="0.2" />
+  <param name="right_j1_trajectory" type="double" value="0.2" />
+  <param name="right_j2_trajectory" type="double" value="0.2" />
+  <param name="right_j3_trajectory" type="double" value="0.2" />
+  <param name="right_j4_trajectory" type="double" value="0.2" />
+  <param name="right_j5_trajectory" type="double" value="0.2" />
+  <param name="right_j6_trajectory" type="double" value="0.2" />
+</node>
+\endverbatim
+

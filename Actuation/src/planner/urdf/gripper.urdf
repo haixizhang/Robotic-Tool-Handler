@@ -1,0 +1,94 @@
+<robot name="gripper">
+
+  <!-- Base Link -->
+  <link name="base_link">
+  <visual>
+      <geometry>
+          <mesh
+            filename = "package://planner/meshes/BackPlate.stl" scale = "0.254 0.254 0.254"
+          />
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="center_bottom_backplate">
+  </link>
+
+  <joint name="center_bottom_backplate_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="center_bottom_backplate"/>
+    <origin xyz="1.0287 1.016 0.4572" rpy="0.0 -1.571 3.1416"/>
+  </joint>
+  
+  <!-- Finger 1 Intermediate Link -->
+  <link name="finger1_pivot">
+    <inertial>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+
+  <!-- Joint for Finger 1 Pivot -->
+  <joint name="finger1_pivot_joint" type="revolute">
+    <parent link="base_link"/>
+    <child link="finger1_pivot"/>
+    <origin xyz="-0.254 0.8636 1.1678" rpy="0.0 0.0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="0.0" upper="1.57" effort="0" velocity="0"/>
+  </joint>
+  
+  <!-- Finger 1 -->
+  <link name="finger1">
+    <visual>
+      <geometry>
+          <mesh
+  	   filename = "package://planner/meshes/main_gripper.stl" scale = "0.254 0.254 0.254"
+          />
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Finger 1 Joint -->
+  <joint name="finger1_joint" type="fixed">
+    <parent link="finger1_pivot"/>
+    <child link="finger1"/>
+    <origin xyz="-0.381 0 -1.27" rpy="0.0 0.0 0"/>
+  </joint>
+
+  <!-- Repeat for Finger 2 -->
+  <!-- Finger w Intermediate Link -->
+  <link name="finger2_pivot">
+    <inertial>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+
+  <!-- Joint for Finger 2 Pivot -->
+  <joint name="finger2_pivot_joint" type="revolute">
+    <parent link="base_link"/>
+    <child link="finger2_pivot"/>
+    <origin xyz="-0.254 1.778 1.1684" rpy="0 0 0"/>
+    <axis xyz="0 1 -1"/>
+    <limit lower="-1.57" upper="-0.13" effort="0" velocity="0"/>
+  </joint>
+
+  <link name="finger2">
+    <visual>
+      <geometry>
+	<mesh
+  	 filename = "package://planner/meshes/45_degree_gripper.stl" scale = "0.254 0.254 0.254"
+	/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- Finger 2 Joint -->
+  <joint name="finger2_joint" type="fixed">
+    <parent link="finger2_pivot"/>
+    <child link="finger2"/>
+    <origin xyz="-0.381 -1.143 -1.27" rpy="0 0 0"/>
+  </joint>
+
+
+</robot>

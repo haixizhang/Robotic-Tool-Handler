@@ -1,0 +1,19 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~j0_spring_stiffness" : \b [double] j0 - Joint spring stiffness (k). Hooke's Law. min: 0.0, default: 10.0, max: 30.0
+- \b "~j0_damping_coefficient" : \b [double] j0 - Joint damping coefficient (c). min: 0.0, default: 0.1, max: 10.0
+- \b "~j1_spring_stiffness" : \b [double] j1 - Joint spring stiffness (k). Hooke's Law. min: 0.0, default: 15.0, max: 30.0
+- \b "~j1_damping_coefficient" : \b [double] j1 - Joint damping coefficient (c). min: 0.0, default: 0.1, max: 7.5
+- \b "~j2_spring_stiffness" : \b [double] j2 - Joint spring stiffness (k). Hooke's Law. min: 0.0, default: 5.0, max: 15.0
+- \b "~j2_damping_coefficient" : \b [double] j2 - Joint damping coefficient (c). min: 0.0, default: 0.1, max: 7.5
+- \b "~j3_spring_stiffness" : \b [double] j3 - Joint spring stiffness (k). Hooke's Law. min: 0.0, default: 5.0, max: 15.0
+- \b "~j3_damping_coefficient" : \b [double] j3 - Joint damping coefficient (c). min: 0.0, default: 0.1, max: 5.0
+- \b "~j4_spring_stiffness" : \b [double] j4 - Joint spring stiffness (k). Hooke's Law. min: 0.0, default: 3.0, max: 9.0
+- \b "~j4_damping_coefficient" : \b [double] j4 - Joint damping coefficient (c). min: 0.0, default: 0.1, max: 1.5
+- \b "~j5_spring_stiffness" : \b [double] j5 - Joint spring stiffness (k). Hooke's Law. min: 0.0, default: 2.0, max: 4.0
+- \b "~j5_damping_coefficient" : \b [double] j5 - Joint damping coefficient (c). min: 0.0, default: 0.1, max: 1.5
+- \b "~j6_spring_stiffness" : \b [double] j6 - Joint spring stiffness (k). Hooke's Law. min: 0.0, default: 1.5, max: 4.0
+- \b "~j6_damping_coefficient" : \b [double] j6 - Joint damping coefficient (c). min: 0.0, default: 0.1, max: 1.0
+

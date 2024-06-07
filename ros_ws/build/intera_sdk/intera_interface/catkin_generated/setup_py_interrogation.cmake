@@ -1,0 +1,7 @@
+set(intera_interface_SETUP_PY_SETUP_MODULE "setuptools")
+set(intera_interface_SETUP_PY_VERSION "5.3.0")
+set(intera_interface_SETUP_PY_SCRIPTS "")
+set(intera_interface_SETUP_PY_PACKAGES "intera_interface;intera_control;intera_dataflow;intera_io;intera_joint_trajectory_action;intera_motion_interface")
+set(intera_interface_SETUP_PY_PACKAGE_DIRS "src/intera_interface;src/intera_control;src/intera_dataflow;src/intera_io;src/intera_joint_trajectory_action;src/intera_motion_interface")
+set(intera_interface_SETUP_PY_MODULES "")
+set(intera_interface_SETUP_PY_MODULE_DIRS "")

@@ -1,0 +1,8 @@
+prefix=/home/enis/ros_ws/devel
+
+Name: sns_ik_lib
+Description: Description of sns_ik_lib
+Version: 0.2.3
+Cflags: -I/home/enis/ros_ws/src/sns_ik/sns_ik_lib/include -I/usr/include/eigen3 -I/usr/share/orocos_kdl/cmake/../../../include
+Libs: -L${prefix}/lib -lsns_ik -lorocos-kdl
+Requires: roscpp std_msgs

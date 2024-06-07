@@ -1,0 +1,8 @@
+prefix=/home/enis/ros_ws/devel
+
+Name: sawyer_sim_examples
+Description: Description of sawyer_sim_examples
+Version: 5.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy intera_core_msgs gazebo_msgs

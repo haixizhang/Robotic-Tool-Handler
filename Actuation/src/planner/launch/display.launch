@@ -1,0 +1,16 @@
+<launch>
+    <!-- Load the URDF into the ROS Parameter Server -->
+    <param name="robot_description" textfile='$(find planner)/urdf/sawyer_urdf.urdf' />
+
+    <!-- Run the robot_state_publisher to publish the states of your robot's joints -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+    <!-- Launch the joint_state_publisher_gui if you want a GUI to manually control the joints (optional) -->
+    <!-- node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui"/-->
+    
+    <node name="full_grasp_planner" pkg="planner" type="full_grasp_plan.py" output="screen"/>
+	
+    <!-- Launch RViz -->
+    <node name="rviz" pkg="rviz" type="rviz"  args="-d $(find planner)/config/rviz_setup.rviz" required="true"/>
+</launch>
+

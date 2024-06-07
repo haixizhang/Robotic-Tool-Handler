@@ -1,0 +1,8 @@
+prefix=/home/enis/ros_ws/devel
+
+Name: intera_examples
+Description: Description of intera_examples
+Version: 5.3.0
+Cflags: -I/home/enis/ros_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: rospy actionlib sensor_msgs control_msgs trajectory_msgs cv_bridge dynamic_reconfigure intera_core_msgs intera_motion_msgs intera_interface

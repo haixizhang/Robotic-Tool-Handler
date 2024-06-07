@@ -1,0 +1,42 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~goal_time" : \b [double] Amount of time (s) controller is permitted to be late achieving goal min: 0.0, default: 0.0, max: 120.0
+- \b "~stopped_velocity_tolerance" : \b [double] Maximum velocity (m/s) at end of trajectory to be considered stopped min: -1.0, default: -1.0, max: 1.0
+- \b "~right_j0_goal" : \b [double] right_j0 - maximum final error min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j1_goal" : \b [double] right_j1 - maximum final error min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j2_goal" : \b [double] right_j2 - maximum final error min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j3_goal" : \b [double] right_j3 - maximum final error min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j4_goal" : \b [double] right_j4 - maximum final error min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j5_goal" : \b [double] right_j5 - maximum final error min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j6_goal" : \b [double] right_j6 - maximum final error min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j0_trajectory" : \b [double] right_j0 - maximum error during trajectory execution min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j1_trajectory" : \b [double] right_j1 - maximum error during trajectory execution min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j2_trajectory" : \b [double] right_j2 - maximum error during trajectory execution min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j3_trajectory" : \b [double] right_j3 - maximum error during trajectory execution min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j4_trajectory" : \b [double] right_j4 - maximum error during trajectory execution min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j5_trajectory" : \b [double] right_j5 - maximum error during trajectory execution min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j6_trajectory" : \b [double] right_j6 - maximum error during trajectory execution min: -1.0, default: -1.0, max: 3.0
+- \b "~right_j0_kp" : \b [double] right_j0 - Kp proportional control gain min: 0.0, default: 2.0, max: 500.0
+- \b "~right_j0_ki" : \b [double] right_j0 - Ki integral control gain min: 0.0, default: 0.0, max: 100.0
+- \b "~right_j0_kd" : \b [double] right_j0 - Kd derivative control gain min: 0.0, default: 0.0, max: 100.0
+- \b "~right_j1_kp" : \b [double] right_j1 - Kp proportional control gain min: 0.0, default: 2.0, max: 500.0
+- \b "~right_j1_ki" : \b [double] right_j1 - Ki integral control gain min: 0.0, default: 0.0, max: 100.0
+- \b "~right_j1_kd" : \b [double] right_j1 - Kd derivative control gain min: 0.0, default: 0.0, max: 100.0
+- \b "~right_j2_kp" : \b [double] right_j2 - Kp proportional control gain min: 0.0, default: 2.0, max: 500.0
+- \b "~right_j2_ki" : \b [double] right_j2 - Ki integral control gain min: 0.0, default: 0.0, max: 100.0
+- \b "~right_j2_kd" : \b [double] right_j2 - Kd derivative control gain min: 0.0, default: 0.0, max: 100.0
+- \b "~right_j3_kp" : \b [double] right_j3 - Kp proportional control gain min: 0.0, default: 2.0, max: 500.0
+- \b "~right_j3_ki" : \b [double] right_j3 - Ki integral control gain min: 0.0, default: 0.0, max: 100.0
+- \b "~right_j3_kd" : \b [double] right_j3 - Kd derivative control gain min: 0.0, default: 0.0, max: 100.0
+- \b "~right_j4_kp" : \b [double] right_j4 - Kp proportional control gain min: 0.0, default: 2.0, max: 500.0
+- \b "~right_j4_ki" : \b [double] right_j4 - Ki integral control gain min: 0.0, default: 0.0, max: 100.0
+- \b "~right_j4_kd" : \b [double] right_j4 - Kd derivative control gain min: 0.0, default: 0.0, max: 100.0
+- \b "~right_j5_kp" : \b [double] right_j5 - Kp proportional control gain min: 0.0, default: 2.0, max: 500.0
+- \b "~right_j5_ki" : \b [double] right_j5 - Ki integral control gain min: 0.0, default: 0.0, max: 100.0
+- \b "~right_j5_kd" : \b [double] right_j5 - Kd derivative control gain min: 0.0, default: 0.0, max: 100.0
+- \b "~right_j6_kp" : \b [double] right_j6 - Kp proportional control gain min: 0.0, default: 2.0, max: 500.0
+- \b "~right_j6_ki" : \b [double] right_j6 - Ki integral control gain min: 0.0, default: 0.0, max: 100.0
+- \b "~right_j6_kd" : \b [double] right_j6 - Kd derivative control gain min: 0.0, default: 0.0, max: 100.0
+

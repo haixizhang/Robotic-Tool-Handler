@@ -1,0 +1,10 @@
+<launch>
+	
+    <node name="speech_processing_node" pkg="voice_recognition_pkg" type="voice_fromfile_new.py" output="screen"/>
+
+        <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
+	
+        <node name="table_detection_node" pkg="table_detection" type="table_detection_node.py" output="screen"/>
+        <include file="$(find yolov5_ros)/launch/yolov5.launch"/>
+    
+</launch>

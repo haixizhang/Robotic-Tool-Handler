@@ -1,0 +1,4 @@
+<launch>
+    <include file="/home/enis/ros_ws/src/launch/main.launch"/>
+    <include file="/home/enis/Actuation/src/planner/launch/display.launch"/>
+</launch>

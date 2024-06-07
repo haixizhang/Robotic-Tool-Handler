@@ -1,0 +1,20 @@
+(cl:in-package intera_motion_msgs-msg)
+(cl:export '(LABEL-VAL
+          LABEL
+          MAX_JOINT_SPEED_RATIO-VAL
+          MAX_JOINT_SPEED_RATIO
+          JOINT_TOLERANCES-VAL
+          JOINT_TOLERANCES
+          MAX_JOINT_ACCEL-VAL
+          MAX_JOINT_ACCEL
+          MAX_LINEAR_SPEED-VAL
+          MAX_LINEAR_SPEED
+          MAX_LINEAR_ACCEL-VAL
+          MAX_LINEAR_ACCEL
+          MAX_ROTATIONAL_SPEED-VAL
+          MAX_ROTATIONAL_SPEED
+          MAX_ROTATIONAL_ACCEL-VAL
+          MAX_ROTATIONAL_ACCEL
+          CORNER_DISTANCE-VAL
+          CORNER_DISTANCE
+))

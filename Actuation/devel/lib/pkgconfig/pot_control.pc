@@ -1,0 +1,8 @@
+prefix=/home/enis/Actuation/devel
+
+Name: pot_control
+Description: Description of pot_control
+Version: 0.0.0
+Cflags: -I/home/enis/Actuation/devel/include -I/home/enis/Actuation/src/pot_control/include
+Libs: -L${prefix}/lib -lpot_control
+Requires: 

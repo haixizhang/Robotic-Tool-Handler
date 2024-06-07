@@ -1,0 +1,21 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~goal_time" : \b [double] Amount of time (s) controller is permitted to be late achieving goal min: 0.0, default: 0.1, max: 120.0
+- \b "~stopped_velocity_tolerance" : \b [double] Maximum velocity (m/s) at end of trajectory to be considered stopped min: -1.0, default: 0.2, max: 1.0
+- \b "~right_j0_goal" : \b [double] right_j0 - maximum final error min: -0.5, default: -0.2, max: 0.5
+- \b "~right_j1_goal" : \b [double] right_j1 - maximum final error min: -0.5, default: -0.2, max: 0.5
+- \b "~right_j2_goal" : \b [double] right_j2 - maximum final error min: -0.5, default: -0.2, max: 0.5
+- \b "~right_j3_goal" : \b [double] right_j3 - maximum final error min: -0.5, default: -0.2, max: 0.5
+- \b "~right_j4_goal" : \b [double] right_j4 - maximum final error min: -0.5, default: -0.2, max: 0.5
+- \b "~right_j5_goal" : \b [double] right_j5 - maximum final error min: -0.5, default: -0.2, max: 0.5
+- \b "~right_j6_goal" : \b [double] right_j6 - maximum final error min: -0.5, default: -0.2, max: 0.5
+- \b "~right_j0_trajectory" : \b [double] right_j0 - maximum error during trajectory execution min: -0.5, default: 0.2, max: 0.5
+- \b "~right_j1_trajectory" : \b [double] right_j1 - maximum error during trajectory execution min: -0.5, default: 0.2, max: 0.5
+- \b "~right_j2_trajectory" : \b [double] right_j2 - maximum error during trajectory execution min: -0.5, default: 0.2, max: 0.5
+- \b "~right_j3_trajectory" : \b [double] right_j3 - maximum error during trajectory execution min: -0.5, default: 0.2, max: 0.5
+- \b "~right_j4_trajectory" : \b [double] right_j4 - maximum error during trajectory execution min: -0.5, default: 0.2, max: 0.5
+- \b "~right_j5_trajectory" : \b [double] right_j5 - maximum error during trajectory execution min: -0.5, default: 0.2, max: 0.5
+- \b "~right_j6_trajectory" : \b [double] right_j6 - maximum error during trajectory execution min: -0.5, default: 0.2, max: 0.5
+

@@ -1,0 +1,8 @@
+prefix=/home/enis/ros_ws/devel
+
+Name: sns_ik_examples
+Description: Description of sns_ik_examples
+Version: 0.2.3
+Cflags: -I/usr/include/eigen3
+Libs: -L${prefix}/lib 
+Requires: roscpp

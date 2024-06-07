@@ -1,0 +1,8 @@
+prefix=/home/enis/Actuation/devel
+
+Name: motor_control
+Description: Description of motor_control
+Version: 0.0.0
+Cflags: -I/home/enis/Actuation/devel/include -I/home/enis/Actuation/src/motor_control/include
+Libs: -L${prefix}/lib -lmotor_control
+Requires: 
