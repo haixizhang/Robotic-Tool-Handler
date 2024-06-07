@@ -8,12 +8,12 @@ The Robotic Tool Handler project is a sophisticated system designed to automate 
 
 ### Objectives
 - Develop a robotic arm to automate tool or object handling.
-![screenshot](https://github/robotic-tool-handler/Doc/Objects1.jpg)
+![screenshot](https://github/Robotic-Tool-Handler/Doc/Objects1.jpg)
 - Increase operational efficiency and safety in industrial tasks.
 - Reduce the reliance on human operators in hazardous environments.
 
 ## Modules and Architecture
-![screenshot](https://github/robotic-tool-handler/Doc/Poster.jpg)
+![screenshot](https://github/Robotic-Tool-Handler/Doc/Poster.jpg)
 
 ### Perception Module
 The Perception Module is the cornerstone of the system, equipped with state-of-the-art sensors and algorithms:
