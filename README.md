@@ -30,7 +30,7 @@ The architecture integrates multiple components:
 
 
 ### Perception Module
-![screenshot](https://github.com/haixizhang/Robotic-Tool-Handler/blob/main/Doc/perception.jpg)
+![screenshot](https://github.com/haixizhang/Robotic-Tool-Handler/blob/main/Doc/perception.png)
 ![screenshot](https://github.com/haixizhang/Robotic-Tool-Handler/blob/main/Doc/yolo.png)
 
 ### Planning Module
