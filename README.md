@@ -7,7 +7,11 @@ The Robotic Tool Handler project is a sophisticated system designed to automate 
 
 ### Objectives
 - Develop a robotic arm to automate tool or object handling.
+<<<<<<< HEAD
 ![screenshot]https://github.com/haixizhang/Robotic-Tool-Handler/blob/main/Doc/Objects1.jpg
+=======
+![screenshot](https://github/haixizhang/Robotic-Tool-Handler/Doc/Objects1.jpg)
+>>>>>>> ceb62d385c00d8fac8551d0137451a613cbcd2e5
 - Increase operational efficiency and safety in industrial tasks.
 - Reduce the reliance on human operators in hazardous environments.
 
@@ -22,6 +26,7 @@ The Robotic Tool Handler project is a sophisticated system designed to automate 
 6. Recorded voice or USB-microphone input
 
 ## Modules and Architecture
+<<<<<<< HEAD
 The architecture integrates multiple components:
 1. **Sensors**: RGB and depth cameras ([Intel RealSense D405](https://www.intelrealsense.com/depth-camera-d405/)) capture environmental data.
 2. **Perception**: Processes sensor data to identify and locate objects.
@@ -29,6 +34,9 @@ The architecture integrates multiple components:
 4. **Executive Module**: Coordinates motor actions and feedback systems.
 5. **Planner and Simulator**: Plans and simulates movements before execution.
 ![screenshot]https://github.com/haixizhang/Robotic-Tool-Handler/blob/main/Doc/arch.png
+=======
+![screenshot](https://github/haixizhang/Robotic-Tool-Handler/Doc/Poster.jpg)
+>>>>>>> ceb62d385c00d8fac8551d0137451a613cbcd2e5
 
 ### Perception Module
 ![screenshot]https://github.com/haixizhang/Robotic-Tool-Handler/blob/main/Doc/perception.jpg
